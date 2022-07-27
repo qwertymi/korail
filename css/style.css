@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans KR', "Malgun Gothic", "맑은 고딕", "돋움", "굴림", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.25px;
+  color: #000;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+/* 공통요소 */
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* content */
+/* 1. 헤더 */
+
+/* 2. 비주얼 */
+
+/* 3. 퀵메뉴 */
+
+/* 4. 주요사업 */
+
+/* 5. 뉴스 */
+
+/* 6. 채용 */
+
+/* 7. 배너 */
+
+/* 8. 푸터 */
