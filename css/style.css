@@ -54,8 +54,128 @@ body {
 }
 
 /* content */
+.wrap {
+  position: relative;
+  display: block;
+}
 /* 1. 헤더 */
+.header {
+  position: relative;
+  display: block;
+  z-index: 9999;
+}
+/* top-link */
+.top-link {
+  position: relative;
+  display: block;
+}
+.quick-ticket > li {
+  display: inline-block;
+}
+.quick-ticket > li:last-child {
+  margin-left:-4px;
+}
+.quick-ticket > li > a {
+  display: block;
+  padding:11px 0;
+  width:100%;
+  height:100%;
+  width:114px;
+  line-height:18px;
+  font-weight: 600;
+  color:#fff;
+  text-align: center;
+  background-color: #0054a6;
+}
+.quick-ticket > li:last-child > a {
+  color:#000;
+  font-weight: 400;
+  background-color: #fff;
+  border-right: 1px solid #bcbec6;
+}
+.quick-ticket > li:last-child:hover > a {
+  background-color: #078EB9;
+  border-color: #078EB9;
+  color:#fff;
+}
 
+.user-utill {
+  position: absolute;
+  right:0;
+  top:0;
+}
+.user-utill > li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left:23px;
+}
+.user-utill > li:first-child {
+  margin-left:0;
+}
+.user-utill > li > a {
+  display: block;
+  padding:11px 0;
+  width:100%;
+  height:100%;
+  text-align: center;
+  letter-spacing: -.48px;
+  line-height:18px;
+}
+.user-utill > li > a:first-child {
+  padding-right:0;
+}
+.user-utill > li:hover img {
+  transform: rotate(180deg);
+}
+.user-utill > li:hover .sub-utill {
+  display: block;
+}
+.sub-utill {
+  position: absolute;
+  left:50%;
+  transform : translateX(-50%);
+  top:calc(100% - 10px);
+  display: none;
+  width:120px;
+  height:200px;
+  background-color: #fff;
+  padding:10px 0;
+  z-index: 99;
+}
+.sub-utill li {
+  margin-top:10px;
+}
+.sub-utill li:first-child {
+  margin-top:0;
+}
+.sub-utill a {
+  display: block;
+  font-size: 15px;
+  padding:0 10px;
+  line-height: 17px;
+}
+.user-utill > li a:hover {
+  text-decoration: underline;
+}
+
+
+.menu-area{
+  position: relative;
+  display: block;
+  background-color: rgba(0,0,0,.50);
+}
+.menu-area .inner {
+  padding:35px 0;
+}
+.logo {
+  display: block;
+  width:195px;
+  height:30px;
+  text-indent: -9999px;
+  background: url('../images/logo-info-short.svg') no-repeat center;
+  background-size: cover;
+}
 /* 2. 비주얼 */
 
 /* 3. 퀵메뉴 */
