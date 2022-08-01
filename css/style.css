@@ -138,7 +138,6 @@ body {
   top:calc(100% - 10px);
   display: none;
   width:120px;
-  height:200px;
   background-color: #fff;
   padding:10px 0;
   z-index: 99;
@@ -169,13 +168,34 @@ body {
   padding:35px 0;
 }
 .logo {
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
   display: block;
-  width:195px;
+  width:227px;
   height:30px;
   text-indent: -9999px;
   background: url('../images/logo-info-short.svg') no-repeat center;
   background-size: cover;
 }
+.gnb {
+  position: absolute;
+  top:50%;
+  display: block;
+  height:100%;
+  transform: translateY(-50%);
+}
+.depth1-list {
+  padding-left:calc(195px + 40px);
+  max-width: 1140px;
+  margin:0 auto;
+}
+.depth1-list > li { 
+  display: inline-block;
+  vertical-align: top;
+}
+
 /* 2. 비주얼 */
 
 /* 3. 퀵메뉴 */
