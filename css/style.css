@@ -162,10 +162,11 @@ body {
 .menu-area{
   position: relative;
   display: block;
+  height:100px;
   background-color: rgba(0,0,0,.50);
 }
 .menu-area .inner {
-  padding:35px 0;
+  height:100%;
 }
 .logo {
   position: absolute;
@@ -179,15 +180,17 @@ body {
   background: url('../images/logo-info-short.svg') no-repeat center;
   background-size: cover;
 }
+.logo-act {
+  background: url('../images/logo-info-short--color.svg') no-repeat center;
+  background-size: cover;
+}
 .gnb {
-  position: absolute;
-  top:50%;
-  display: block;
-  height:100%;
-  transform: translateY(-50%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .depth1-list {
-  padding-left:calc(195px + 40px);
   max-width: 1140px;
   margin:0 auto;
 }
@@ -195,7 +198,24 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+.depth1-list > li > a {
+  display: block;
+  padding:38px 0;
+  font-size: 22px;
+  height:100px;
+  line-height:24px;
+  font-weight: 500;
+  text-align: center;
+  color:#fff;
+}
 
+
+.header-utill {
+  position: absolute;
+  right:0;
+  top:50%;
+  transform: translateY(-50%);
+}
 /* 2. 비주얼 */
 
 /* 3. 퀵메뉴 */
