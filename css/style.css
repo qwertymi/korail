@@ -63,6 +63,145 @@ body {
 /* 4. 주요사업 */
 
 /* 5. 뉴스 */
+.news {
+  position: relative;
+  padding: 125px 0 125px 445px;
+}
+
+.news_list {}
+
+.news_list li {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.news_list li::after {
+  content: '';
+  position: absolute;
+  right: 6px;
+  top: 52%;
+  display: block;
+  height: 22px;
+  width: 1px;
+  background: #0054A6;
+  font-size: 0;
+  transform: rotate(15deg) translateY(-50%);
+}
+
+.news_list li:last-child::after {
+  display: none;
+}
+
+.news_list li button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  color: #0054A6;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR';
+  letter-spacing:-0.35px;
+}
+
+.all_bt {
+  color: #fff !important;
+  position: relative;
+  z-index: 9;
+}
+.all_bt::after{
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: -65%;
+  display: block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background: #0054A6;
+  z-index: -1;
+}
+
+.notice_bt {
+  position: relative;
+  margin-left: 12px;
+}
+
+.broad_bt {
+  position: relative;
+  margin-left: 12px;
+}
+
+.notice_bt::after,
+.broad_bt::after{
+  content: '';
+  position: absolute;
+  left: -12px;
+  top:-5px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #0054A6;
+}
+
+.news_more{
+  position: absolute;
+  right: 0;
+  top: 125px;
+
+  font-size: 18px;
+  letter-spacing:-0.35px;
+}
+
+.news_all {
+  position: relative;
+  display: block;
+  padding-top: 70px;
+}
+
+
+.news_box {
+  display: inline-block;
+  vertical-align: top;
+  width: 465px;
+  height: 175px;
+  margin-bottom: 36px;
+}
+
+.news_box h5 {
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.news_box a {
+  display: block;
+  font-size: 22px;
+  height: 57px;
+  width: 350px;
+  margin: 15px 0;
+  cursor: pointer;
+  letter-spacing: -0.35px;
+  word-break: keep-all;
+}
+
+.news_box span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #aaa;
+  letter-spacing: -0.35px;
+}
+
+.news_notice_box h5 {
+  color: #1a94e6;
+}
+
+.news_broad_box h5 {
+  color: #ea4c49;
+}
+
 
 /* 6. 채용 */
 
