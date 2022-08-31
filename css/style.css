@@ -377,14 +377,6 @@ body {
 
 
 /* 3. 퀵메뉴 */
-.quick-menu {
-  position: relative;
-  display: block;
-  background-color: pink;
-  height: 1000px;
-  border-top: 10px solid red;
-}
-
 
 
 
