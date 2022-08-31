@@ -6,11 +6,14 @@ $(document).ready(function(){
   let broadBt = $('.broad_bt');
   let noticeBox = $('.news_notice_box');
   let broadBox = $('.news_broad_box');
+  let newsMore = $('.news_more');
+  
   allBt.click(function(){
     noticeBox.show();
     broadBox.show();
     removeActive();
     allBt.addClass('all_bt');
+    newsMore.hide();
   })
 
   noticeBt.click(function(){
@@ -18,6 +21,7 @@ $(document).ready(function(){
     broadBox.hide();
     removeActive();
     noticeBt.addClass('notice_bt_active');
+    newsMore.show();
   });
 
   broadBt.click(function(){
@@ -25,6 +29,7 @@ $(document).ready(function(){
     noticeBox.hide();
     removeActive();
     broadBt.addClass('broad_bt_active');
+    newsMore.show();
   });
 
   let removeActive = () => {
@@ -34,9 +39,19 @@ $(document).ready(function(){
     broadBt.removeClass('broad_bt_active');
   }
 
-  let newsMore = $('.news_more');
   
 
+  let careerSwiper = new Swiper(".sw-career",{
+    touchRatio: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      type : 'fraction'
+    },
+    navigation: {
+      nextEl: ".sw-career-next",
+      prevEl: ".sw-career-prev",
+    },
+  })
 });
 
 

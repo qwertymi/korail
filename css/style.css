@@ -68,7 +68,7 @@ body {
   padding: 125px 0 85px 445px;
 }
 
-.news::before{
+.news::before {
   content: '';
   position: absolute;
   top: 170px;
@@ -114,7 +114,7 @@ body {
   font-size: 22px;
   font-weight: 500;
   font-family: 'Noto Sans KR';
-  letter-spacing:-0.35px;
+  letter-spacing: -0.35px;
 }
 
 .all_bt {
@@ -122,7 +122,8 @@ body {
   position: relative;
   z-index: 9;
 }
-.all_bt::after{
+
+.all_bt::after {
   content: '';
   position: absolute;
   left: -50%;
@@ -134,7 +135,8 @@ body {
   background: #0054A6;
   z-index: -1;
 }
-.all_bt_unact{
+
+.all_bt_unact {
   color: #000
 }
 
@@ -148,16 +150,17 @@ body {
   margin-left: 15px;
 }
 
-.notice_bt_active, .broad_bt_active{
+.notice_bt_active,
+.broad_bt_active {
   color: #0054A6;
 }
 
 .notice_bt_active::after,
-.broad_bt_active::after{
+.broad_bt_active::after {
   content: '';
   position: absolute;
   left: -12px;
-  top:-5px;
+  top: -5px;
   display: block;
   width: 13px;
   height: 13px;
@@ -165,13 +168,18 @@ body {
   background: #0054A6;
 }
 
-.news_more{
+.news_more {
   position: absolute;
-  right: 0;
+  right: 148px;
   top: 125px;
-
+  display: none;
   font-size: 18px;
-  letter-spacing:-0.35px;
+  letter-spacing: -0.35px;
+}
+
+.news_more span{
+  vertical-align: bottom;
+  margin-right: 8px;
 }
 
 .news_all {
@@ -286,13 +294,13 @@ body {
   vertical-align: top;
 }
 
-.career_main_txt::after{
+.career_main_txt::after {
   content: '';
   display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 1px;
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .career_main_txt b {
@@ -326,43 +334,52 @@ body {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+
+  transition: all 0.2s;
 }
 
-.career_main_list1 {
-  background: url('../images/career_icon01.svg') no-repeat;
-  background-position: center 37%;
-  background-size: 43px;
-}
-.career_main_list1:hover{
-  background: url('../images/career_icon01_hover.svg') no-repeat;
-  background-position: center 37%;
-  background-size: 43px;
+.career_main_list li a:hover {
+  color: #000;
+  background-color: #fff;
 }
 
-.career_main_list2 {
-  background: url('../images/career_icon02.svg') no-repeat;
-  background-position: center 37%;
-  background-size: 59px;
-}
-.career_main_list2:hover{
-  background: url('../images/career_icon02_hover.svg') no-repeat;
-  background-position: center 37%;
-  background-size: 43px;
-}
-
-
-.career_main_list3 {
-  background: url('../images/career_icon03.svg') no-repeat;
-  background-position: center 37%;
-  background-size: 63px;
-}
-.career_main_list3:hover{
-  background: url('../images/career_icon03_hover.svg') no-repeat;
-  background-position: center 37%;
-  background-size: 43px;
+.career_main_list li span::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  display: block;
+  width: 60px;
+  height: 60px;
 }
 
+.career_main_list1 span::before {
+  background: url('../images/career_icon01.svg') no-repeat center;
 
+}
+
+.career_main_list1:hover ::before {
+  background: url('../images/career_icon01_hover.svg') no-repeat center;
+}
+
+.career_main_list2 span::before {
+  background: url('../images/career_icon02.svg') no-repeat center;
+
+}
+
+.career_main_list2:hover ::before {
+  background: url('../images/career_icon02_hover.svg') no-repeat center;
+}
+
+.career_main_list3 span::before {
+  background: url('../images/career_icon03.svg') no-repeat center;
+
+}
+
+.career_main_list3:hover ::before {
+  background: url('../images/career_icon03_hover.svg') no-repeat center;
+}
 
 
 .career_banner {
@@ -395,6 +412,56 @@ body {
   transform: scale(1.03);
 }
 
+.swiper-control {
+  position: absolute;
+  top: 325px;
+  left: 40px;
+  display: block;
+  width: 400px;
+  height: 50px;
+  z-index: 9999;
+}
+
+.swiper-control button{
+  display: inline-block;
+  cursor: pointer;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding-top: 3px;
+  margin-right: 3px;
+  border: 0;
+}
+
+.swiper-control button:hover{
+  border: 1px solid #000;
+}
+.sw-career-prev {
+
+}
+
+.sw-career-play {
+
+}
+
+.sw-career-next {
+
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 0;
+  margin-left: 112px;
+  display: block;
+  width: 62px;
+  height: 31px;
+  border-radius: 14px;
+  padding-top: 3px;
+  background-color: #fff;
+  text-align: bottom;
+
+}
 
 
 
