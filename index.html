@@ -48,6 +48,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
+  <script src="js/hyomin.script.js"></script>
 </head>
 
 <body>
@@ -470,10 +471,74 @@
     </header>
     <!-- 2. 비주얼 : 조효민 -->
     <section class="visual">
+
+      <div class="visual-main">
+        <div class="visual-slogan"><img src="images/visual-slogan.png" alt="slogan"></div>
+        <div class="swiper-container sw-visual">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sw-visaul-zoom sw-visual-1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sw-visaul-zoom sw-visual-2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sw-visaul-zoom sw-visual-3"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sw-visaul-zoom sw-visual-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
   
+      <div class="inner">
+        <div class="visual-sub">
+          <div class="sw-visual-sub-control">
+            <button class="sw-visual-sub-prev"><img src="images/popup_prev.svg" alt="prev"></button>
+            <button class="sw-visual-sub-bt"><img src="images/popup_pause.svg" alt="pause"></button>
+            <button class="sw-visual-sub-next"><img src="images/popup_next.svg" alt="next"></button>
+            <div class="sw-visual-sub-pg"></div>
+          </div>
+          <div class="swiper-container sw-visual-sub">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-sub-1"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-sub-2"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-sub-3"></a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="sw-visual-bottom">
+          <div class="sw-visual-control">
+            <div class="sw-visual-pg"></div>
+            <div class="sw-visual-text">
+              <span>KTX 이음</span>
+              <!-- <span>폭염대비 살수작업</span>
+                <span>KTX승무원 고객응대</span>
+                <span>서해금빛열차</span> -->
+            </div>
+            <button class="sw-visual-bt">
+              <img src="images/visual_pause.svg" alt="pause">
+            </button>
+          </div>
+          <div class="visual-scroll">
+            <span class="scroll-text">내려서 더보기</span>
+            <span class="scroll-img"></span>
+          </div>
+        </div>
+      </div>
+      
     </section>
     <!-- 3. 퀵메뉴 : 김도용 -->
-    <section class="">
+    <section class="quick-menu">
   
     </section>
     <!-- 4. 주요사업 : 김도용 -->
@@ -533,8 +598,77 @@
       </div>
     </section>
     <!-- 8. 푸터 : 조효민 -->
-    <footer class="">
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="inner">
+          <div class="sub-inner">
+            <div class="footer-top-left">
+              <ul>
+                <li><a href="#" class="personal">개인정보처리방침</a></li>
+                <li><a href="#" class="policy">&middot 이메일무단수집거부</a></li>
+                <li><a href="#" class="policy">&middot 저작권정책</a></li>
+              </ul>
+            </div>
   
+            <div class="footer-top-right">
+              <ul>
+                <li><a href="#"><img src="images/footer_youtube.svg" alt="youtube" class="footer-youtube"></a></li>
+                <li><a href="#"><img src="images/footer_facebook.svg" alt="facebook" class="footer-facebook"></a></li>
+                <li><a href="#"><img src="images/footer_instagram.svg" alt="insta" class="footer-insta"></a></li>
+                <li><a href="#"><img src="images/footer_blog.svg" alt="blog" class="footer-blog"></a></li>
+                <li><a href="#"><img src="images/footer_twitter.svg" alt="twitter" class="footer-twitter"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="inner clearfix">
+          <div class="footer-bottom-left">
+            <div class="footer-logo"><img src="images/footer_logo.png" alt="footer-logo"></div>
+            <div class="footer-info">
+              <p class="footer-text">
+                <span class="name footer_after">상호 : 한국철도공사</span>
+                <span class="ceo footer_after">대표자 : 나희승</span>
+                <span class="license footer_after">사업자등록 : 314-82-10024</span>
+                <span class="tel_license">통신판매업신고 : 대전 동구-0233호</span>
+                <br>
+                <span class="address footer_after">34618 대전광역시 동구 중앙로 240</span>
+                <span class="tel footer_after">고객센터 : 1544-7788</span>
+                <span class="tel">대표전화 : 042-472-5000</span>
+              </p>
+              <span class="copyright">COPYRIGHT ⓒ KOREA RAILROAD. ALL RIGHTS RESERVED.</span>
+            </div>
+          </div>
+          <div class="footer-bottom-right">
+            <div class="footer-site footer-site1">
+              <span>계열사</span>
+              <ul class="site-list site-list1">
+                <li><a href="#">코레일관광개발(주)</a></li>
+                <li><a href="#">코레일네트웍스(주)</a></li>
+                <li><a href="#">코레일로지스(주)</a></li>
+                <li><a href="#">코레일유통(주)</a></li>
+                <li><a href="#">코레일테크(주)</a></li>
+              </ul>
+            </div>
+            <div class="footer-site footer-site2">
+              <span>관련사이트</span>
+              <ul class="site-list site-list2">
+                <li><a href="#">이사회 커뮤니티</a></li>
+                <li><a href="#">물류정보서비스</a></li>
+                <li><a href="#">철도박물관</a></li>
+                <li><a href="#">인재개발원</a></li>
+                <li><a href="#">전자조달시스템</a></li>
+                <li><a href="#">희망철도재단</a></li>
+                <li><a href="#">ALIO</a></li>
+                <li><a href="#">정부24</a></li>
+                <li><a href="#">안전신문고</a></li>
+              </ul>
+            </div>
+            <div class="mark1"></div>
+            <div class="mark2"></div>
+          </div>
+        </div>
     </footer>
   </div>
 </body>
