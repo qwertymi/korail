@@ -16,6 +16,27 @@ $(document).ready(function(){
     }
   });
 
+  
+  // 김도용 애니메이션
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene, {
+    relativeInput: true,
+    hoverOnly: true
+  });
+  parallaxInstance.friction(0.05, 0.05);
+
+  $(window).resize(function () {
+    var userAgent = window.navigator.userAgent;
+    var isMobile = /mobile/i.test(userAgent);
+
+    if (isMobile) {
+      parallaxInstance.disable();
+    } else {
+      parallaxInstance.enable();
+    }
+  }).resize();
+
+
   // menu-area
   let dim = $('.dim');
   let headerNavi = $('.header-navi');
@@ -28,13 +49,13 @@ $(document).ready(function(){
   let depth2 = $('.depth2');
 
   let naviFullHeight = depth2.outerHeight();
-console.log(naviFullHeight);
+// console.log(naviFullHeight);
 
   $.each(depth1List,function(index){
   $(this).mouseenter(function(){
     let idx = $(depth1List).index(this);
     let depth2Length = $(this).find('.depth2-list > li').length;
-    console.log(depth2Length);
+    // console.log(depth2Length);
     depth2.removeClass('active');
     $(depth1List).eq(idx).find(depth2).addClass('active');
     if(depth2Length<6){
@@ -58,8 +79,16 @@ console.log(naviFullHeight);
     depth2.removeClass('active');
   });
 
-
-
+  // search
+  let searchBt = $('.search-bt')
+  let searchDim = $('.dim')
+  let searchClose = $('.search-close')
+  searchBt.click(() => {
+    searchDim.stop().slideDown(800)
+  })
+  searchClose.click(() => {
+    searchDim.stop().slideUp(800)
+  })
 });
 
 window.onload = function(){
@@ -93,5 +122,26 @@ window.onload = function(){
       swBanner.autoplay.stop();
     }
   })
+
+  // 김도용 작업
+  let swPart = new Swiper('.sw-part', {
+    slidesPerView: 8,
+    centeredSlides: true,
+    spaceBetween: 0,
+    loop: true,
+    on: {
+      slideChange: function () {
+        let ddd = this.realIndex;
+      },
+      slideChangeTransitionEnd: function () {
+
+      }     
+    },
+
+    navigation: {
+      prevEl:'.bt-prev',
+      nextEl:'.bt-next'
+    },
+  });
 }
 
