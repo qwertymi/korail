@@ -7,5 +7,3 @@ https://qwertymi.github.io/korail/<br>
 <br>
 ▪ 𝘖𝘙𝘐𝘎𝘐𝘕<br>
 https://info.korail.com/info/index.do<br>
-<br>
-* 개발자 도구에서 작업한 섹션을 확인하실 수 있습니다.
